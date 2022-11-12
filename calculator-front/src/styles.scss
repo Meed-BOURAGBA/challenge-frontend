@@ -1,0 +1,50 @@
+@import "src/sass/variables.scss";
+
+.title {
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $primaire;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-left: 30vw;
+}
+
+.level {
+    max-height: 66px;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    padding-left: 10%;
+}
+
+.hr-custom-level {
+    margin-top: 34px;
+    margin-bottom: 0;
+}
+
+button {
+    width: 132px !important;
+    margin-right: 2px !important;
+}
+
+.formulaire-label {
+    width: 100%;
+    height: 22px;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: $COOL-GREY-11;
+    &.error {
+        color: $CHERRY;
+    }
+}

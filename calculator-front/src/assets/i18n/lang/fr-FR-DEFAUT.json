@@ -1,0 +1,12 @@
+{
+    "title": "Calculator",
+    "card-form-label":"Montant désiré ",
+    "display-card-resultat":"Résultats ",
+    "display-card-pas-combinaison":"Pas de combinaison possible ",
+    "card-form-level-1":"Level 1",
+    "card-form-level-2":"Level 2",
+    "card-form-btn-valider":"Valider",
+    "card-form-btn-suivant":"Montant suivant",
+    "card-form-btn-precedent":"Montant précédent",
+    "display-cards-label":"Votre montant est composé des cartes suivantes :"
+}

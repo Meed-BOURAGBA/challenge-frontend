@@ -1,0 +1,14 @@
+<h1 class="title"> {{"title" | translate}} </h1>
+
+<div class="row">
+    <!-- card-form :  -->
+    <div class="col-md-6 border border-primary custom-div custom-form">
+        <app-card-form (calculatorComponentValueEmit)="setCalculatorComponentValue($event)"></app-card-form>
+    </div>
+
+    <!-- display-card : display the results -->
+    <div class="col-md-6 border border-primary custom-div">
+        <app-display-cards [calculatorComponentValue]="calculatorComponentValue"></app-display-cards>
+    </div>
+
+</div>
