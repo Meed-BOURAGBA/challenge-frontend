@@ -8,5 +8,6 @@
     "card-form-btn-valider":"Valider",
     "card-form-btn-suivant":"Montant suivant",
     "card-form-btn-precedent":"Montant précédent",
+    "card-form-montants-possibles": "Les montants possibles  ",
     "display-cards-label":"Votre montant est composé des cartes suivantes :"
 }

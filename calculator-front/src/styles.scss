@@ -13,7 +13,8 @@
 
 h1 {
     margin-top: 40px;
-    margin-left: 30vw;
+    margin-left: 45vw;
+    padding-bottom: 20px;
 }
 
 .level {
@@ -21,6 +22,7 @@ h1 {
     padding-top: 11px;
     padding-bottom: 9px;
     padding-left: 10%;
+    margin-bottom: 86px;
 }
 
 .hr-custom-level {
@@ -44,6 +46,7 @@ button {
     line-height: 1.38;
     letter-spacing: normal;
     color: $COOL-GREY-11;
+
     &.error {
         color: $CHERRY;
     }

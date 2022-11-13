@@ -8,8 +8,7 @@ import { CalculatorComponentValue } from '../model/calculator.-component-value.m
 })
 export class DisplayCardsComponent implements OnInit {
 
-  @Input()
-  calculatorComponentValue: CalculatorComponentValue | undefined;
+  @Input() calculatorComponentValue: CalculatorComponentValue | undefined;
 
   constructor() { }
 

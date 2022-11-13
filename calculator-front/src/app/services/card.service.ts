@@ -9,11 +9,12 @@ import { ConstantesURL } from '../constantes/constantes-url';
 export class CardService {
 
   auth_token = 'tokenTest123';
-  shopId = null;
+  shopID = null;
 
   constructor(private http: HttpClient) {
+    // if you want to put on another shop, you will juste have to modify the id in config.json
     this.http.get('../assets/configuration/config.json').subscribe((content: any) => {
-      this.shopId = content.shopId;
+      this.shopID = content.shopID;
     })
   }
 
@@ -24,8 +25,8 @@ export class CardService {
    */
   getCards(desiredAmount: number): Observable<any> {
     let url = ConstantesURL.ADR_SERVEUR + ConstantesURL.GET_CARDS;
-    if (this.shopId != null) {
-      url = url.replace('[shopId]', this.shopId);
+    if (this.shopID != null) {
+      url = url.replace('[shopId]', this.shopID);
     }
     const requestParams = new HttpParams().set('amount', desiredAmount);
     const requestOptions: Object = {

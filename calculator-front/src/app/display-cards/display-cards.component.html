@@ -3,11 +3,10 @@
 </p>
 <p *ngIf="calculatorComponentValue && calculatorComponentValue.cards.length > 0"> {{"display-cards-label" | translate}}
 </p>
-<p *ngIf="calculatorComponentValue && calculatorComponentValue.cards.length == 0"> {{"display-card-pas-combinaison" |
-    translate}} </p>
-<div *ngIf="calculatorComponentValue">
+<p *ngIf="calculatorComponentValue && calculatorComponentValue.cards.length == 0"> {{"display-card-pas-combinaison" | translate}} </p>
+<div class="row" *ngIf="calculatorComponentValue">
     <ng-container *ngFor="let card of calculatorComponentValue.cards;">
-        <div>
+        <div class="card col-md-1">
             {{card}}
         </div>
     </ng-container>

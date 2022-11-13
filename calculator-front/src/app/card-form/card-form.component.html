@@ -1,8 +1,7 @@
-<form [formGroup]="form">
-    <!-- body -->
+<form [formGroup]="form" (ngSubmit)="onClickValider()">
     <div class="row">
         <!-- input -->
-        <p class="formulaire-label">
+        <p class="formulaire-label" [ngClass]="{'error': submitted && !isValidForm()}">
             {{"card-form-label" | translate}} :
         </p>
         <input type="text" class="col-md-9 form-control input-add-select"
@@ -14,9 +13,21 @@
     <!-- LEVEL 1 -->
     <h4>{{"card-form-level-1" | translate}}</h4>
     <div class="row level">
-        <button type="button" class="btn btn-primary col-md-6" (click)="onClickValider()">
-            {{"card-form-btn-valider" | translate}}
-        </button>
+        <div class="col-md-6">
+            <button type="submit" class="btn btn-primary">
+                {{"card-form-btn-valider" | translate}}
+            </button>
+        </div>
+        <div class="col-md-6" *ngIf="possibleAmounts.length > 0">
+            <p class="formulaire-label">
+                {{"card-form-montants-possibles" | translate}} :
+            </p>
+            <ng-container *ngFor="let mount of possibleAmounts;">
+                <div class="montant-possible" (click)="onChoisirMontant(mount)">
+                    {{mount}}
+                </div>
+            </ng-container>
+        </div>
     </div>
     <!-- LEVEL 2 -->
     <h4>{{"card-form-level-2" | translate}}</h4>
